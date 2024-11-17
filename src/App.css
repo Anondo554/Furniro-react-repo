@@ -1,0 +1,10 @@
+.productOverly { 
+    opacity: 0;
+    transition: all linear 0.4s;
+    visibility: hidden;
+}
+
+.productItem:hover .productOverly {
+    visibility: visible;
+    opacity: 1;
+}
