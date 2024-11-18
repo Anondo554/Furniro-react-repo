@@ -6,6 +6,13 @@ import Droing from "./assets/images/Droing.png";
 import Living from "./assets/images/LIVING.png";
 import Bedroom from "./assets/images/Bedroom.png";
 import Tool from "./assets/images/image 1 (1).png";
+import Chear from "./assets/images/image 2.png";
+import Lolito from "./assets/images/image 3.png";
+import Respira from "./assets/images/image 4.png";
+import Muggo from "./assets/images/image 7.png";
+import Rectangle from "./assets/images/Rectangle 24.png";
+import Rectangle2 from "./assets/images/Rectangle 25.png";
+import Rectangle3 from "./assets/images/Indicator.png";
 import { FaRegUser } from "react-icons/fa6";
 import { IoSearchOutline } from "react-icons/io5";
 import { GrShareOption } from "react-icons/gr";
@@ -150,541 +157,671 @@ function App() {
         </div>
 
         <Container className={"font-pop"}>
-          <Flex className={'justify-center'}>
-            <div  className="grid grid-cols-4 gap-9">
-              <div className="relative productItem ">
-                <div>
-                  <Image src={Tool} alt={Tool} />
-                  <div className="absolute top-[23px] right-[23px] w-[48px] h-[48px] rounded-[50%] bg-red-500 text-center">
-                    <Heading
-                      text={"-35%"}
-                      as={"h3"}
-                      className={" mt-[12px] "}
-                    />
-                  </div>
-                </div>
-
-                <div className="bg-[#F4F5F7] p-[20px]">
+          <div className="grid grid-cols-4 gap-9 text-center">
+            <div className="relative productItem group">
+              <div>
+                <Image src={Tool} alt={Tool} />
+                <div className="absolute top-[23px] right-[23px] w-[48px] h-[48px] rounded-[50%] bg-red-500 text-center">
                   <Heading
-                    text={"Syltherine"}
+                    text={"-35%"}
                     as={"h3"}
-                    className={"text-[24px] font-semibold text-[#3A3A3A]  "}
+                    className={" mt-[12px] text-[16px] font-medium text-white"}
                   />
-                  <Heading
-                    text={"Stylish cafe chair"}
-                    as={"p"}
-                    className={"text-[16px] font-medium text-[#898989]"}
-                  />
-                  <h4 className="text-[20px] font-semibold text-[#3A3A3A] ">
-                    Rp 2.500.000{" "}
-                    <span>
-                      {" "}
-                      <del className="text-[16px] font-semibold text-[#B0B0B0]">
-                        Rp 3.500.000
-                      </del>
-                    </span>
-                  </h4>
-                </div>
-                <div className="productOverly top-0 left-0 absolute w-full h-full bg-customCyan ">
-                  <div className="text-center pt-[150px]">
-                    <Button
-                      btnText={"Add to cart"}
-                      className={
-                        "py-[12px] px-[50px] bg-[#FFFFFF] text-[#B88E2F] font-semibold text-[16px] "
-                      }
-                    />
-                    <div className="font-pop">
-                      <Flex className={"justify-center space-x-4 mt-[24px]"}>
-                        <div className="text-[16px] font-semibold text-[#ffffff] ">
-                          <Flex>
-                            <GrShareOption className="mt-1 " />
-                            <Heading text={"Share"} as={"p"} />
-                          </Flex>
-                        </div>
-                        <div className="text-[16px] font-semibold text-[#ffffff] ">
-                          <Flex>
-                            <MdCompareArrows className=" mt-1 " />
-                            <Heading text={"Compare"} as={"p"} />
-                          </Flex>
-                        </div>
-                        <div className="text-[16px] font-semibold text-[#ffffff] ">
-                          <Flex>
-                            <FiHeart className="mt-1 text-xl " />
-                            <Heading text={"Like"} as={"p"} />
-                          </Flex>
-                        </div>
-                      </Flex>
-                    </div>
-                  </div>
                 </div>
               </div>
-              <div className="relative productItem">
-                <div>
-                  <Image src={Tool} alt={Tool} />
-                  <div className="absolute top-[23px] right-[23px] w-[48px] h-[48px] rounded-[50%] bg-red-500 text-center">
-                    <Heading
-                      text={"-35%"}
-                      as={"h3"}
-                      className={" mt-[12px] "}
-                    />
-                  </div>
-                </div>
 
-                <div className="bg-[#F4F5F7] p-[20px]">
-                  <Heading
-                    text={"Syltherine"}
-                    as={"h3"}
-                    className={"text-[24px] font-semibold text-[#3A3A3A]  "}
-                  />
-                  <Heading
-                    text={"Stylish cafe chair"}
-                    as={"p"}
-                    className={"text-[16px] font-medium text-[#898989]"}
-                  />
-                  <h4 className="text-[20px] font-semibold text-[#3A3A3A] ">
-                    Rp 2.500.000{" "}
-                    <span>
-                      {" "}
-                      <del className="text-[16px] font-semibold text-[#B0B0B0]">
-                        Rp 3.500.000
-                      </del>
-                    </span>
-                  </h4>
-                </div>
-                <div className="productOverly top-0 left-0 absolute w-full h-full bg-customCyan ">
-                  <div className="text-center pt-[150px]">
-                    <Button
-                      btnText={"Add to cart"}
-                      className={
-                        "py-[12px] px-[50px] bg-[#FFFFFF] text-[#B88E2F] font-semibold text-[16px] "
-                      }
-                    />
-                    <div className="font-pop">
-                      <Flex className={"justify-center space-x-4 mt-[24px]"}>
-                        <div className="text-[16px] font-semibold text-[#ffffff] ">
-                          <Flex>
-                            <GrShareOption className="mt-1 " />
-                            <Heading text={"Share"} as={"p"} />
-                          </Flex>
-                        </div>
-                        <div className="text-[16px] font-semibold text-[#ffffff] ">
-                          <Flex>
-                            <MdCompareArrows className=" mt-1 " />
-                            <Heading text={"Compare"} as={"p"} />
-                          </Flex>
-                        </div>
-                        <div className="text-[16px] font-semibold text-[#ffffff] ">
-                          <Flex>
-                            <FiHeart className="mt-1 text-xl " />
-                            <Heading text={"Like"} as={"p"} />
-                          </Flex>
-                        </div>
-                      </Flex>
-                    </div>
-                  </div>
-                </div>
+              <div className="bg-[#F4F5F7] p-[20px]">
+                <Heading
+                  text={"Syltherine"}
+                  as={"h3"}
+                  className={"text-[24px] font-semibold text-[#3A3A3A]  "}
+                />
+                <Heading
+                  text={"Stylish cafe chair"}
+                  as={"p"}
+                  className={"text-[16px] font-medium text-[#898989]"}
+                />
+                <h4 className="text-[20px] font-semibold text-[#3A3A3A] ">
+                  Rp 2.500.000{" "}
+                  <span>
+                    {" "}
+                    <del className="text-[16px] font-semibold text-[#B0B0B0]">
+                      Rp 3.500.000
+                    </del>
+                  </span>
+                </h4>
               </div>
-              <div className="relative productItem">
-                <div>
-                  <Image src={Tool} alt={Tool} />
-                  <div className="absolute top-[23px] right-[23px] w-[48px] h-[48px] rounded-[50%] bg-red-500 text-center">
-                    <Heading
-                      text={"-35%"}
-                      as={"h3"}
-                      className={" mt-[12px] "}
-                    />
-                  </div>
-                </div>
-
-                <div className="bg-[#F4F5F7] p-[20px]">
-                  <Heading
-                    text={"Syltherine"}
-                    as={"h3"}
-                    className={"text-[24px] font-semibold text-[#3A3A3A]  "}
+              <div className=" top-0 left-0 absolute w-full h-full bg-customCyan group-hover:block hidden ">
+                <div className="text-center pt-[150px]">
+                  <Button
+                    btnText={"Add to cart"}
+                    className={
+                      "py-[12px] px-[50px] bg-[#FFFFFF] text-[#B88E2F] font-semibold text-[16px] "
+                    }
                   />
-                  <Heading
-                    text={"Stylish cafe chair"}
-                    as={"p"}
-                    className={"text-[16px] font-medium text-[#898989]"}
-                  />
-                  <h4 className="text-[20px] font-semibold text-[#3A3A3A] ">
-                    Rp 2.500.000{" "}
-                    <span>
-                      {" "}
-                      <del className="text-[16px] font-semibold text-[#B0B0B0]">
-                        Rp 3.500.000
-                      </del>
-                    </span>
-                  </h4>
-                </div>
-                <div className="productOverly top-0 left-0 absolute w-full h-full bg-customCyan ">
-                  <div className="text-center pt-[150px]">
-                    <Button
-                      btnText={"Add to cart"}
-                      className={
-                        "py-[12px] px-[50px] bg-[#FFFFFF] text-[#B88E2F] font-semibold text-[16px] "
-                      }
-                    />
-                    <div className="font-pop">
-                      <Flex className={"justify-center space-x-4 mt-[24px]"}>
-                        <div className="text-[16px] font-semibold text-[#ffffff] ">
-                          <Flex>
-                            <GrShareOption className="mt-1 " />
-                            <Heading text={"Share"} as={"p"} />
-                          </Flex>
-                        </div>
-                        <div className="text-[16px] font-semibold text-[#ffffff] ">
-                          <Flex>
-                            <MdCompareArrows className=" mt-1 " />
-                            <Heading text={"Compare"} as={"p"} />
-                          </Flex>
-                        </div>
-                        <div className="text-[16px] font-semibold text-[#ffffff] ">
-                          <Flex>
-                            <FiHeart className="mt-1 text-xl " />
-                            <Heading text={"Like"} as={"p"} />
-                          </Flex>
-                        </div>
-                      </Flex>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="relative productItem">
-                <div>
-                  <Image src={Tool} alt={Tool} />
-                  <div className="absolute top-[23px] right-[23px] w-[48px] h-[48px] rounded-[50%] bg-red-500 text-center">
-                    <Heading
-                      text={"-35%"}
-                      as={"h3"}
-                      className={" mt-[12px] "}
-                    />
-                  </div>
-                </div>
-
-                <div className="bg-[#F4F5F7] p-[20px]">
-                  <Heading
-                    text={"Syltherine"}
-                    as={"h3"}
-                    className={"text-[24px] font-semibold text-[#3A3A3A]  "}
-                  />
-                  <Heading
-                    text={"Stylish cafe chair"}
-                    as={"p"}
-                    className={"text-[16px] font-medium text-[#898989]"}
-                  />
-                  <h4 className="text-[20px] font-semibold text-[#3A3A3A] ">
-                    Rp 2.500.000{" "}
-                    <span>
-                      {" "}
-                      <del className="text-[16px] font-semibold text-[#B0B0B0]">
-                        Rp 3.500.000
-                      </del>
-                    </span>
-                  </h4>
-                </div>
-                <div className="productOverly top-0 left-0 absolute w-full h-full bg-customCyan ">
-                  <div className="text-center pt-[150px]">
-                    <Button
-                      btnText={"Add to cart"}
-                      className={
-                        "py-[12px] px-[50px] bg-[#FFFFFF] text-[#B88E2F] font-semibold text-[16px] "
-                      }
-                    />
-                    <div className="font-pop">
-                      <Flex className={"justify-center space-x-4 mt-[24px]"}>
-                        <div className="text-[16px] font-semibold text-[#ffffff] ">
-                          <Flex>
-                            <GrShareOption className="mt-1 " />
-                            <Heading text={"Share"} as={"p"} />
-                          </Flex>
-                        </div>
-                        <div className="text-[16px] font-semibold text-[#ffffff] ">
-                          <Flex>
-                            <MdCompareArrows className=" mt-1 " />
-                            <Heading text={"Compare"} as={"p"} />
-                          </Flex>
-                        </div>
-                        <div className="text-[16px] font-semibold text-[#ffffff] ">
-                          <Flex>
-                            <FiHeart className="mt-1 text-xl " />
-                            <Heading text={"Like"} as={"p"} />
-                          </Flex>
-                        </div>
-                      </Flex>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="relative productItem">
-                <div>
-                  <Image src={Tool} alt={Tool} />
-                  <div className="absolute top-[23px] right-[23px] w-[48px] h-[48px] rounded-[50%] bg-red-500 text-center">
-                    <Heading
-                      text={"-35%"}
-                      as={"h3"}
-                      className={" mt-[12px] "}
-                    />
-                  </div>
-                </div>
-
-                <div className="bg-[#F4F5F7] p-[20px]">
-                  <Heading
-                    text={"Syltherine"}
-                    as={"h3"}
-                    className={"text-[24px] font-semibold text-[#3A3A3A]  "}
-                  />
-                  <Heading
-                    text={"Stylish cafe chair"}
-                    as={"p"}
-                    className={"text-[16px] font-medium text-[#898989]"}
-                  />
-                  <h4 className="text-[20px] font-semibold text-[#3A3A3A] ">
-                    Rp 2.500.000{" "}
-                    <span>
-                      {" "}
-                      <del className="text-[16px] font-semibold text-[#B0B0B0]">
-                        Rp 3.500.000
-                      </del>
-                    </span>
-                  </h4>
-                </div>
-                <div className="productOverly top-0 left-0 absolute w-full h-full bg-customCyan ">
-                  <div className="text-center pt-[150px]">
-                    <Button
-                      btnText={"Add to cart"}
-                      className={
-                        "py-[12px] px-[50px] bg-[#FFFFFF] text-[#B88E2F] font-semibold text-[16px] "
-                      }
-                    />
-                    <div className="font-pop">
-                      <Flex className={"justify-center space-x-4 mt-[24px]"}>
-                        <div className="text-[16px] font-semibold text-[#ffffff] ">
-                          <Flex>
-                            <GrShareOption className="mt-1 " />
-                            <Heading text={"Share"} as={"p"} />
-                          </Flex>
-                        </div>
-                        <div className="text-[16px] font-semibold text-[#ffffff] ">
-                          <Flex>
-                            <MdCompareArrows className=" mt-1 " />
-                            <Heading text={"Compare"} as={"p"} />
-                          </Flex>
-                        </div>
-                        <div className="text-[16px] font-semibold text-[#ffffff] ">
-                          <Flex>
-                            <FiHeart className="mt-1 text-xl " />
-                            <Heading text={"Like"} as={"p"} />
-                          </Flex>
-                        </div>
-                      </Flex>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="relative productItem">
-                <div>
-                  <Image src={Tool} alt={Tool} />
-                  <div className="absolute top-[23px] right-[23px] w-[48px] h-[48px] rounded-[50%] bg-red-500 text-center">
-                    <Heading
-                      text={"-35%"}
-                      as={"h3"}
-                      className={" mt-[12px] "}
-                    />
-                  </div>
-                </div>
-
-                <div className="bg-[#F4F5F7] p-[20px]">
-                  <Heading
-                    text={"Syltherine"}
-                    as={"h3"}
-                    className={"text-[24px] font-semibold text-[#3A3A3A]  "}
-                  />
-                  <Heading
-                    text={"Stylish cafe chair"}
-                    as={"p"}
-                    className={"text-[16px] font-medium text-[#898989]"}
-                  />
-                  <h4 className="text-[20px] font-semibold text-[#3A3A3A] ">
-                    Rp 2.500.000{" "}
-                    <span>
-                      {" "}
-                      <del className="text-[16px] font-semibold text-[#B0B0B0]">
-                        Rp 3.500.000
-                      </del>
-                    </span>
-                  </h4>
-                </div>
-                <div className="productOverly top-0 left-0 absolute w-full h-full bg-customCyan ">
-                  <div className="text-center pt-[150px]">
-                    <Button
-                      btnText={"Add to cart"}
-                      className={
-                        "py-[12px] px-[50px] bg-[#FFFFFF] text-[#B88E2F] font-semibold text-[16px] "
-                      }
-                    />
-                    <div className="font-pop">
-                      <Flex className={"justify-center space-x-4 mt-[24px]"}>
-                        <div className="text-[16px] font-semibold text-[#ffffff] ">
-                          <Flex>
-                            <GrShareOption className="mt-1 " />
-                            <Heading text={"Share"} as={"p"} />
-                          </Flex>
-                        </div>
-                        <div className="text-[16px] font-semibold text-[#ffffff] ">
-                          <Flex>
-                            <MdCompareArrows className=" mt-1 " />
-                            <Heading text={"Compare"} as={"p"} />
-                          </Flex>
-                        </div>
-                        <div className="text-[16px] font-semibold text-[#ffffff] ">
-                          <Flex>
-                            <FiHeart className="mt-1 text-xl " />
-                            <Heading text={"Like"} as={"p"} />
-                          </Flex>
-                        </div>
-                      </Flex>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="relative productItem">
-                <div>
-                  <Image src={Tool} alt={Tool} />
-                  <div className="absolute top-[23px] right-[23px] w-[48px] h-[48px] rounded-[50%] bg-red-500 text-center">
-                    <Heading
-                      text={"-35%"}
-                      as={"h3"}
-                      className={" mt-[12px] "}
-                    />
-                  </div>
-                </div>
-
-                <div className="bg-[#F4F5F7] p-[20px]">
-                  <Heading
-                    text={"Syltherine"}
-                    as={"h3"}
-                    className={"text-[24px] font-semibold text-[#3A3A3A]  "}
-                  />
-                  <Heading
-                    text={"Stylish cafe chair"}
-                    as={"p"}
-                    className={"text-[16px] font-medium text-[#898989]"}
-                  />
-                  <h4 className="text-[20px] font-semibold text-[#3A3A3A] ">
-                    Rp 2.500.000{" "}
-                    <span>
-                      {" "}
-                      <del className="text-[16px] font-semibold text-[#B0B0B0]">
-                        Rp 3.500.000
-                      </del>
-                    </span>
-                  </h4>
-                </div>
-                <div className="productOverly top-0 left-0 absolute w-full h-full bg-customCyan ">
-                  <div className="text-center pt-[150px]">
-                    <Button
-                      btnText={"Add to cart"}
-                      className={
-                        "py-[12px] px-[50px] bg-[#FFFFFF] text-[#B88E2F] font-semibold text-[16px] "
-                      }
-                    />
-                    <div className="font-pop">
-                      <Flex className={"justify-center space-x-4 mt-[24px]"}>
-                        <div className="text-[16px] font-semibold text-[#ffffff] ">
-                          <Flex>
-                            <GrShareOption className="mt-1 " />
-                            <Heading text={"Share"} as={"p"} />
-                          </Flex>
-                        </div>
-                        <div className="text-[16px] font-semibold text-[#ffffff] ">
-                          <Flex>
-                            <MdCompareArrows className=" mt-1 " />
-                            <Heading text={"Compare"} as={"p"} />
-                          </Flex>
-                        </div>
-                        <div className="text-[16px] font-semibold text-[#ffffff] ">
-                          <Flex>
-                            <FiHeart className="mt-1 text-xl " />
-                            <Heading text={"Like"} as={"p"} />
-                          </Flex>
-                        </div>
-                      </Flex>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="relative productItem">
-                <div>
-                  <Image src={Tool} alt={Tool} />
-                  <div className="absolute top-[23px] right-[23px] w-[48px] h-[48px] rounded-[50%] bg-red-500 text-center">
-                    <Heading
-                      text={"-35%"}
-                      as={"h3"}
-                      className={" mt-[12px] "}
-                    />
-                  </div>
-                </div>
-
-                <div className="bg-[#F4F5F7] p-[20px]">
-                  <Heading
-                    text={"Syltherine"}
-                    as={"h3"}
-                    className={"text-[24px] font-semibold text-[#3A3A3A]  "}
-                  />
-                  <Heading
-                    text={"Stylish cafe chair"}
-                    as={"p"}
-                    className={"text-[16px] font-medium text-[#898989]"}
-                  />
-                  <h4 className="text-[20px] font-semibold text-[#3A3A3A] ">
-                    Rp 2.500.000{" "}
-                    <span>
-                      {" "}
-                      <del className="text-[16px] font-semibold text-[#B0B0B0]">
-                        Rp 3.500.000
-                      </del>
-                    </span>
-                  </h4>
-                </div>
-                <div className="productOverly top-0 left-0 absolute w-full h-full bg-customCyan ">
-                  <div className="text-center pt-[150px]">
-                    <Button
-                      btnText={"Add to cart"}
-                      className={
-                        "py-[12px] px-[50px] bg-[#FFFFFF] text-[#B88E2F] font-semibold text-[16px] "
-                      }
-                    />
-                    <div className="font-pop">
-                      <Flex className={"justify-center space-x-4 mt-[24px]"}>
-                        <div className="text-[16px] font-semibold text-[#ffffff] ">
-                          <Flex>
-                            <GrShareOption className="mt-1 " />
-                            <Heading text={"Share"} as={"p"} />
-                          </Flex>
-                        </div>
-                        <div className="text-[16px] font-semibold text-[#ffffff] ">
-                          <Flex>
-                            <MdCompareArrows className=" mt-1 " />
-                            <Heading text={"Compare"} as={"p"} />
-                          </Flex>
-                        </div>
-                        <div className="text-[16px] font-semibold text-[#ffffff] ">
-                          <Flex>
-                            <FiHeart className="mt-1 text-xl " />
-                            <Heading text={"Like"} as={"p"} />
-                          </Flex>
-                        </div>
-                      </Flex>
-                    </div>
+                  <div className="font-pop">
+                    <Flex className={"justify-center space-x-4 mt-[24px]"}>
+                      <div className="text-[16px] font-semibold text-[#ffffff] ">
+                        <Flex>
+                          <GrShareOption className="mt-1 " />
+                          <Heading text={"Share"} as={"p"} />
+                        </Flex>
+                      </div>
+                      <div className="text-[16px] font-semibold text-[#ffffff] ">
+                        <Flex>
+                          <MdCompareArrows className=" mt-1 " />
+                          <Heading text={"Compare"} as={"p"} />
+                        </Flex>
+                      </div>
+                      <div className="text-[16px] font-semibold text-[#ffffff] ">
+                        <Flex>
+                          <FiHeart className="mt-1 text-xl " />
+                          <Heading text={"Like"} as={"p"} />
+                        </Flex>
+                      </div>
+                    </Flex>
                   </div>
                 </div>
               </div>
             </div>
-          </Flex>
+            <div className="relative productItem group">
+              <div>
+                <Image src={Chear} alt={Chear} />
+                <div className="absolute top-[23px] right-[23px] w-[48px] h-[48px] rounded-[50%] bg-red-500 text-center">
+                  <Heading
+                    text={"-35%"}
+                    as={"h3"}
+                    className={" mt-[12px] text-[16px] font-medium text-white "}
+                  />
+                </div>
+              </div>
+
+              <div className="bg-[#F4F5F7] p-[20px]">
+                <Heading
+                  text={"Syltherine"}
+                  as={"h3"}
+                  className={"text-[24px] font-semibold text-[#3A3A3A]  "}
+                />
+                <Heading
+                  text={"Stylish cafe chair"}
+                  as={"p"}
+                  className={"text-[16px] font-medium text-[#898989]"}
+                />
+                <h4 className="text-[20px] font-semibold text-[#3A3A3A] ">
+                  Rp 2.500.000{" "}
+                  <span>
+                    {" "}
+                    <del className="text-[16px] font-semibold text-[#B0B0B0]">
+                      Rp 3.500.000
+                    </del>
+                  </span>
+                </h4>
+              </div>
+              <div className=" top-0 left-0 absolute w-full h-full bg-customCyan group-hover:block hidden ">
+                <div className="text-center pt-[150px]">
+                  <Button
+                    btnText={"Add to cart"}
+                    className={
+                      "py-[12px] px-[50px] bg-[#FFFFFF] text-[#B88E2F] font-semibold text-[16px] "
+                    }
+                  />
+                  <div className="font-pop">
+                    <Flex className={"justify-center space-x-4 mt-[24px]"}>
+                      <div className="text-[16px] font-semibold text-[#ffffff] ">
+                        <Flex>
+                          <GrShareOption className="mt-1 " />
+                          <Heading text={"Share"} as={"p"} />
+                        </Flex>
+                      </div>
+                      <div className="text-[16px] font-semibold text-[#ffffff] ">
+                        <Flex>
+                          <MdCompareArrows className=" mt-1 " />
+                          <Heading text={"Compare"} as={"p"} />
+                        </Flex>
+                      </div>
+                      <div className="text-[16px] font-semibold text-[#ffffff] ">
+                        <Flex>
+                          <FiHeart className="mt-1 text-xl " />
+                          <Heading text={"Like"} as={"p"} />
+                        </Flex>
+                      </div>
+                    </Flex>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="relative productItem group">
+              <div>
+                <Image src={Lolito} alt={Lolito} />
+                <div className="absolute top-[23px] right-[23px] w-[48px] h-[48px] rounded-[50%] bg-red-500 text-center">
+                  <Heading
+                    text={"-35%"}
+                    as={"h3"}
+                    className={" mt-[12px] text-[16px] font-medium text-white"}
+                  />
+                </div>
+              </div>
+
+              <div className="bg-[#F4F5F7] p-[20px]">
+                <Heading
+                  text={"Syltherine"}
+                  as={"h3"}
+                  className={"text-[24px] font-semibold text-[#3A3A3A]  "}
+                />
+                <Heading
+                  text={"Stylish cafe chair"}
+                  as={"p"}
+                  className={"text-[16px] font-medium text-[#898989]"}
+                />
+                <h4 className="text-[20px] font-semibold text-[#3A3A3A] ">
+                  Rp 2.500.000{" "}
+                  <span>
+                    {" "}
+                    <del className="text-[16px] font-semibold text-[#B0B0B0]">
+                      Rp 3.500.000
+                    </del>
+                  </span>
+                </h4>
+              </div>
+              <div className=" top-0 left-0 absolute w-full h-full bg-customCyan group-hover:block hidden ">
+                <div className="text-center pt-[150px]">
+                  <Button
+                    btnText={"Add to cart"}
+                    className={
+                      "py-[12px] px-[50px] bg-[#FFFFFF] text-[#B88E2F] font-semibold text-[16px] "
+                    }
+                  />
+                  <div className="font-pop">
+                    <Flex className={"justify-center space-x-4 mt-[24px]"}>
+                      <div className="text-[16px] font-semibold text-[#ffffff] ">
+                        <Flex>
+                          <GrShareOption className="mt-1 " />
+                          <Heading text={"Share"} as={"p"} />
+                        </Flex>
+                      </div>
+                      <div className="text-[16px] font-semibold text-[#ffffff] ">
+                        <Flex>
+                          <MdCompareArrows className=" mt-1 " />
+                          <Heading text={"Compare"} as={"p"} />
+                        </Flex>
+                      </div>
+                      <div className="text-[16px] font-semibold text-[#ffffff] ">
+                        <Flex>
+                          <FiHeart className="mt-1 text-xl " />
+                          <Heading text={"Like"} as={"p"} />
+                        </Flex>
+                      </div>
+                    </Flex>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="relative productItem group">
+              <div>
+                <Image src={Respira} alt={Respira} />
+                <div className="absolute top-[23px] right-[23px] w-[48px] h-[48px] rounded-[50%] bg-green-500 text-center">
+                  <Heading
+                    text={"New"}
+                    as={"h3"}
+                    className={
+                      " mt-[12px] text-[16px] font-medium text-[#FFFFFF] "
+                    }
+                  />
+                </div>
+              </div>
+
+              <div className="bg-[#F4F5F7] p-[20px]">
+                <Heading
+                  text={"Syltherine"}
+                  as={"h3"}
+                  className={"text-[24px] font-semibold text-[#3A3A3A]  "}
+                />
+                <Heading
+                  text={"Stylish cafe chair"}
+                  as={"p"}
+                  className={"text-[16px] font-medium text-[#898989]"}
+                />
+                <h4 className="text-[20px] font-semibold text-[#3A3A3A] ">
+                  Rp 2.500.000{" "}
+                  <span>
+                    {" "}
+                    <del className="text-[16px] font-semibold text-[#B0B0B0]">
+                      Rp 3.500.000
+                    </del>
+                  </span>
+                </h4>
+              </div>
+              <div className=" top-0 left-0 absolute w-full h-full bg-customCyan group-hover:block hidden ">
+                <div className="text-center pt-[150px]">
+                  <Button
+                    btnText={"Add to cart"}
+                    className={
+                      "py-[12px] px-[50px] bg-[#FFFFFF] text-[#B88E2F] font-semibold text-[16px] "
+                    }
+                  />
+                  <div className="font-pop">
+                    <Flex className={"justify-center space-x-4 mt-[24px]"}>
+                      <div className="text-[16px] font-semibold text-[#ffffff] ">
+                        <Flex>
+                          <GrShareOption className="mt-1 " />
+                          <Heading text={"Share"} as={"p"} />
+                        </Flex>
+                      </div>
+                      <div className="text-[16px] font-semibold text-[#ffffff] ">
+                        <Flex>
+                          <MdCompareArrows className=" mt-1 " />
+                          <Heading text={"Compare"} as={"p"} />
+                        </Flex>
+                      </div>
+                      <div className="text-[16px] font-semibold text-[#ffffff] ">
+                        <Flex>
+                          <FiHeart className="mt-1 text-xl " />
+                          <Heading text={"Like"} as={"p"} />
+                        </Flex>
+                      </div>
+                    </Flex>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="relative productItem group">
+              <div>
+                <Image src={Respira} alt={Respira} />
+                <div className="absolute top-[23px] right-[23px] w-[48px] h-[48px] rounded-[50%] bg-green-500 ">
+                  <Heading
+                    text={"New"}
+                    as={"h3"}
+                    className={
+                      " mt-[12px] text-[16px] font-medium text-[#FFFFFF] "
+                    }
+                  />
+                </div>
+              </div>
+
+              <div className="bg-[#F4F5F7] p-[20px]">
+                <Heading
+                  text={"Syltherine"}
+                  as={"h3"}
+                  className={"text-[24px] font-semibold text-[#3A3A3A]  "}
+                />
+                <Heading
+                  text={"Stylish cafe chair"}
+                  as={"p"}
+                  className={"text-[16px] font-medium text-[#898989]"}
+                />
+                <h4 className="text-[20px] font-semibold text-[#3A3A3A] ">
+                  Rp 2.500.000{" "}
+                  <span>
+                    {" "}
+                    <del className="text-[16px] font-semibold text-[#B0B0B0]">
+                      Rp 3.500.000
+                    </del>
+                  </span>
+                </h4>
+              </div>
+              <div className=" top-0 left-0 absolute w-full h-full bg-customCyan group-hover:block hidden ">
+                <div className="text-center pt-[150px]">
+                  <Button
+                    btnText={"Add to cart"}
+                    className={
+                      "py-[12px] px-[50px] bg-[#FFFFFF] text-[#B88E2F] font-semibold text-[16px] "
+                    }
+                  />
+                  <div className="font-pop">
+                    <Flex className={"justify-center space-x-4 mt-[24px]"}>
+                      <div className="text-[16px] font-semibold text-[#ffffff] ">
+                        <Flex>
+                          <GrShareOption className="mt-1 " />
+                          <Heading text={"Share"} as={"p"} />
+                        </Flex>
+                      </div>
+                      <div className="text-[16px] font-semibold text-[#ffffff] ">
+                        <Flex>
+                          <MdCompareArrows className=" mt-1 " />
+                          <Heading text={"Compare"} as={"p"} />
+                        </Flex>
+                      </div>
+                      <div className="text-[16px] font-semibold text-[#ffffff] ">
+                        <Flex>
+                          <FiHeart className="mt-1 text-xl " />
+                          <Heading text={"Like"} as={"p"} />
+                        </Flex>
+                      </div>
+                    </Flex>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="relative productItem group">
+              <div>
+                <Image src={Muggo} alt={Muggo} />
+                <div className="absolute top-[23px] right-[23px] w-[48px] h-[48px] rounded-[50%] bg-red-500 text-center">
+                  <Heading
+                    text={"-35%"}
+                    as={"h3"}
+                    className={" mt-[12px] text-[16px] font-medium text-white "}
+                  />
+                </div>
+              </div>
+
+              <div className="bg-[#F4F5F7] p-[20px]">
+                <Heading
+                  text={"Muggo"}
+                  as={"h3"}
+                  className={"text-[24px] font-semibold text-[#3A3A3A]  "}
+                />
+                <Heading
+                  text={"Stylish cafe chair"}
+                  as={"p"}
+                  className={"text-[16px] font-medium text-[#898989]"}
+                />
+                <h4 className="text-[20px] font-semibold text-[#3A3A3A] ">
+                  Rp 2.500.000{" "}
+                  <span>
+                    {" "}
+                    <del className="text-[16px] font-semibold text-[#B0B0B0]">
+                      Rp 3.500.000
+                    </del>
+                  </span>
+                </h4>
+              </div>
+              <div className=" top-0 left-0 absolute w-full h-full bg-customCyan group-hover:block hidden ">
+                <div className="text-center pt-[150px]">
+                  <Button
+                    btnText={"Add to cart"}
+                    className={
+                      "py-[12px] px-[50px] bg-[#FFFFFF] text-[#B88E2F] font-semibold text-[16px] "
+                    }
+                  />
+                  <div className="font-pop">
+                    <Flex className={"justify-center space-x-4 mt-[24px]"}>
+                      <div className="text-[16px] font-semibold text-[#ffffff] ">
+                        <Flex>
+                          <GrShareOption className="mt-1 " />
+                          <Heading text={"Share"} as={"p"} />
+                        </Flex>
+                      </div>
+                      <div className="text-[16px] font-semibold text-[#ffffff] ">
+                        <Flex>
+                          <MdCompareArrows className=" mt-1 " />
+                          <Heading text={"Compare"} as={"p"} />
+                        </Flex>
+                      </div>
+                      <div className="text-[16px] font-semibold text-[#ffffff] ">
+                        <Flex>
+                          <FiHeart className="mt-1 text-xl " />
+                          <Heading text={"Like"} as={"p"} />
+                        </Flex>
+                      </div>
+                    </Flex>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="relative productItem group">
+              <div>
+                <Image src={Respira} alt={Respira} />
+                <div className="absolute top-[23px] right-[23px] w-[48px] h-[48px] rounded-[50%] bg-green-500 ">
+                  <Heading
+                    text={"New"}
+                    as={"h3"}
+                    className={
+                      " mt-[12px] text-[16px] font-medium text-[#FFFFFF] "
+                    }
+                  />
+                </div>
+              </div>
+
+              <div className="bg-[#F4F5F7] p-[20px]">
+                <Heading
+                  text={"Syltherine"}
+                  as={"h3"}
+                  className={"text-[24px] font-semibold text-[#3A3A3A]  "}
+                />
+                <Heading
+                  text={"Stylish cafe chair"}
+                  as={"p"}
+                  className={"text-[16px] font-medium text-[#898989]"}
+                />
+                <h4 className="text-[20px] font-semibold text-[#3A3A3A] ">
+                  Rp 2.500.000{" "}
+                  <span>
+                    {" "}
+                    <del className="text-[16px] font-semibold text-[#B0B0B0]">
+                      Rp 3.500.000
+                    </del>
+                  </span>
+                </h4>
+              </div>
+              <div className=" top-0 left-0 absolute w-full h-full bg-customCyan group-hover:block hidden ">
+                <div className="text-center pt-[150px]">
+                  <Button
+                    btnText={"Add to cart"}
+                    className={
+                      "py-[12px] px-[50px] bg-[#FFFFFF] text-[#B88E2F] font-semibold text-[16px] "
+                    }
+                  />
+                  <div className="font-pop">
+                    <Flex className={"justify-center space-x-4 mt-[24px]"}>
+                      <div className="text-[16px] font-semibold text-[#ffffff] ">
+                        <Flex>
+                          <GrShareOption className="mt-1 " />
+                          <Heading text={"Share"} as={"p"} />
+                        </Flex>
+                      </div>
+                      <div className="text-[16px] font-semibold text-[#ffffff] ">
+                        <Flex>
+                          <MdCompareArrows className=" mt-1 " />
+                          <Heading text={"Compare"} as={"p"} />
+                        </Flex>
+                      </div>
+                      <div className="text-[16px] font-semibold text-[#ffffff] ">
+                        <Flex>
+                          <FiHeart className="mt-1 text-xl " />
+                          <Heading text={"Like"} as={"p"} />
+                        </Flex>
+                      </div>
+                    </Flex>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="relative productItem group">
+              <div>
+                <Image src={Muggo} alt={Muggo} />
+                <div className="absolute top-[23px] right-[23px] w-[48px] h-[48px] rounded-[50%] bg-red-500 text-center">
+                  <Heading
+                    text={"-35%"}
+                    as={"h3"}
+                    className={" mt-[12px] text-[16px] font-medium text-white "}
+                  />
+                </div>
+              </div>
+
+              <div className="bg-[#F4F5F7] p-[20px]">
+                <Heading
+                  text={"Muggo"}
+                  as={"h3"}
+                  className={"text-[24px] font-semibold text-[#3A3A3A]  "}
+                />
+                <Heading
+                  text={"Stylish cafe chair"}
+                  as={"p"}
+                  className={"text-[16px] font-medium text-[#898989]"}
+                />
+                <h4 className="text-[20px] font-semibold text-[#3A3A3A] ">
+                  Rp 2.500.000{" "}
+                  <span>
+                    {" "}
+                    <del className="text-[16px] font-semibold text-[#B0B0B0]">
+                      Rp 3.500.000
+                    </del>
+                  </span>
+                </h4>
+              </div>
+              <div className=" top-0 left-0 absolute w-full h-full bg-customCyan group-hover:block hidden ">
+                <div className="text-center pt-[150px]">
+                  <Button
+                    btnText={"Add to cart"}
+                    className={
+                      "py-[12px] px-[50px] bg-[#FFFFFF] text-[#B88E2F] font-semibold text-[16px] "
+                    }
+                  />
+                  <div className="font-pop">
+                    <Flex className={"justify-center space-x-4 mt-[24px]"}>
+                      <div className="text-[16px] font-semibold text-[#ffffff] ">
+                        <Flex>
+                          <GrShareOption className="mt-1 " />
+                          <Heading text={"Share"} as={"p"} />
+                        </Flex>
+                      </div>
+                      <div className="text-[16px] font-semibold text-[#ffffff] ">
+                        <Flex>
+                          <MdCompareArrows className=" mt-1 " />
+                          <Heading text={"Compare"} as={"p"} />
+                        </Flex>
+                      </div>
+                      <div className="text-[16px] font-semibold text-[#ffffff] ">
+                        <Flex>
+                          <FiHeart className="mt-1 text-xl " />
+                          <Heading text={"Like"} as={"p"} />
+                        </Flex>
+                      </div>
+                    </Flex>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </Container>
       </section>
       {/* prodact part end  */}
+
+      {/* Beautiful rooms part start  */}
+      <section className="bg-[#FCF8F3] py-[40px] my-[70px] ">
+        <Container className={"font-pop"}>
+          <Flex className={"gap-6"}>
+            <div className="mt-[180px] w-[40%]">
+              <Heading
+                text={"50+ Beautiful rooms inspiration"}
+                as={"h4"}
+                className="text-[40px] font-bold text-[#3A3A3A] "
+              />
+              <Heading
+                text={
+                  "Our designer already made a lot of beautiful prototipe of rooms that inspire you"
+                }
+                as={"p"}
+                className="text-[18px] font-medium text-[#616161] "
+              />
+              <Button
+                btnText={"Explore More"}
+                className="py-[12px] px-[36px] bg-[#B88E2F] text-[16px] font-bold text-white mt-[30px]"
+              />
+            </div>
+            <div>
+              <Image src={Rectangle} alt={"Rectangle"} />
+            </div>
+            <div>
+              <Image src={Rectangle2} alt={"Rectangle2"} />
+              <Image src={Rectangle3} alt={"Rectangle3"} className={"pt-5"} />
+            </div>
+          </Flex>
+        </Container>
+      </section>
+      {/* Beautiful rooms part end  */}
+
+      {/* footer part start  */}
+      <footer>
+        <Container>
+          <Flex className={'mb-10'}>
+            <div className="w-[30%]">
+              <Heading
+                text={"Funiro."}
+                as={"h3"}
+                className="text-[24px] font-bold text-black"
+              />
+              <Heading
+                text={"400 University Drive Suite 200 Coral Gables"}
+                as={"h3"}
+                className="text-[16px] text-[#9F9F9F] pt-[55px] "
+              />
+              <Heading
+                text={"FL 33134 USA"}
+                as={"h3"}
+                className="text-[16px] text-[#9F9F9F] "
+              /> 
+            </div>
+            <div className="w-[20%] ml-28">
+              <Heading
+                text={"Link"}
+                as={"h3"}
+                className="text-[16px] text-[#9F9F9F] pb-[50px] font-medium "
+              />
+              <Heading
+                text={"Home"}
+                as={"h3"}
+                className="text-[16px] text-black pb-[50px] font-medium "
+              />
+              <Heading
+                text={"Shop"}
+                as={"h3"}
+                className="text-[16px] text-black pb-[50px] font-medium "
+              />
+              <Heading
+                text={"About"}
+                as={"h3"}
+                className="text-[16px] text-black pb-[50px] font-medium "
+              />
+              <Heading
+                text={"Contact"}
+                as={"h3"}
+                className="text-[16px] text-black font-medium "
+              />
+            </div>
+            <div className="w-[20%]">
+            <Heading
+                text={"Help"}
+                as={"h3"}
+                className="text-[16px] text-[#9F9F9F] pb-[50px] font-medium "
+              />
+              <Heading
+                text={"Payment Options"}
+                as={"h3"}
+                className="text-[16px] text-black pb-[50px] font-medium "
+              />
+              <Heading
+                text={"Returns"}
+                as={"h3"}
+                className="text-[16px] text-black pb-[50px] font-medium "
+              />
+              <Heading
+                text={"Privacy Policies"}
+                as={"h3"}
+                className="text-[16px] text-black pb-[50px] font-medium "
+              />
+            </div>
+            <div className="w-[30%]">
+            <Heading
+                text={"Newsletter"}
+                as={"h3"}
+                className="text-[14px] text-[#9F9F9F] pb-[50px] font-medium "
+              />
+              <input type="text" placeholder="Enter Your Email Address" className="border-b-2 border-black" />
+              <Button btnText={'SUBSCRIBE'}  className="text-[14px] text-black ml-5 font-medium border-b-2 border-black"/>
+            </div>
+          </Flex>
+          <hr />
+          <div>
+          <Heading
+                text={"2023 furino. All rights reverved"}
+                as={"h3"}
+                className="text-[16px] text-[#000000] pt-[20px] pb-[20px] font-medium "
+              />
+          </div>
+        </Container>
+      </footer>
+      {/* footer part end  */}
     </>
   );
 }
