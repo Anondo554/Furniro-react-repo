@@ -30,7 +30,7 @@ function App() {
     <>
       <section className="font-pop">
         {/* navbar part start */}
-        <Container cla>
+        <Container>
           <div className="py-[40px] ">
             <Flex className={"justify-between items-center"}>
               <div>
@@ -39,7 +39,7 @@ function App() {
               <div>
                 <Flex
                   className={
-                    "space-x-[70px] text-[16px] font-medium font-pop mt-1"
+                    "space-x-2 md:space-x-[70px] text-[16px] font-medium font-pop mt-1"
                   }
                 >
                   <Menu mText={"Home"} />
@@ -49,7 +49,7 @@ function App() {
                 </Flex>
               </div>
               <div>
-                <Flex className={"text-[25px] space-x-[30px]"}>
+                <Flex className={"md:text-[25px] space-x-[30px]"}>
                   <FaRegUser />
                   <IoSearchOutline />
                   <FaRegHeart />
@@ -65,14 +65,14 @@ function App() {
       <section className="font-pop">
         <div className="bg-banner bg-cover bg-center bg-no-repeat py-[150px] ">
           <Container>
-            <div className=" w-[643px] bg-[#FFF3E3] p-[40px] ml-auto mt-5">
+            <div className="w-[300px] md:w-[643px] bg-[#FFF3E3] p-[40px] ml-auto mt-5">
               <div>
                 <Heading text={"New Arrival"} as={"p"} />
                 <Heading
                   text={"Discover Our New Collection"}
                   as={"h1"}
                   className={
-                    "pb-[20px] pr-[154px] text-[52px] leading-[64px] font-bold text-[#B88E2F]  "
+                    "pb-[20px] md:pr-[154px] md:text-[52px] md:leading-[64px] font-bold text-[#B88E2F]  "
                   }
                 />
                 <Heading
@@ -80,12 +80,14 @@ function App() {
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis."
                   }
                   as={"p"}
-                  className={"pr-[36px] pb-[50px] text-[18px] font-medium "}
+                  className={
+                    "md:pr-[36px] md:pb-[50px] md:text-[18px] font-medium "
+                  }
                 />
                 <Button
                   btnText={"BUY Now"}
                   className={
-                    "py-[25px] px-[70px] bg-[#B88E2F] text-[16px] font-bold text-white "
+                    "py-[25px] px-[70px] bg-[#B88E2F] md:text-[16px] font-bold text-white "
                   }
                 />
               </div>
@@ -110,7 +112,9 @@ function App() {
           />
         </div>
         <Container>
-          <Flex className={"justify-center space-x-7"}>
+          <Flex
+            className={" ml-4 flex-col md:flex-row justify-center md:space-x-7"}
+          >
             <div>
               <Image src={Droing} alt={Droing} />
               <Heading
@@ -148,7 +152,7 @@ function App() {
 
       {/* prodect part start  */}
       <section className="font-pop">
-        <div className="pt-[70px] pb--[50px] ">
+        <div className="pt-[70px] pb-[50px] ">
           <Heading
             text={"Browse The Range"}
             as={"h3"}
@@ -157,10 +161,10 @@ function App() {
         </div>
 
         <Container className={"font-pop"}>
-          <div className="grid grid-cols-4 gap-9 text-center">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-9 text-center">
             <div className="relative productItem group">
               <div>
-                <Image src={Tool} alt={Tool} />
+                <Image src={Tool} alt={Tool} className={"w-full"} />
                 <div className="absolute top-[23px] right-[23px] w-[48px] h-[48px] rounded-[50%] bg-red-500 text-center">
                   <Heading
                     text={"-35%"}
@@ -226,7 +230,7 @@ function App() {
             </div>
             <div className="relative productItem group">
               <div>
-                <Image src={Chear} alt={Chear} />
+                <Image src={Chear} alt={Chear} className={"w-full"} />
                 <div className="absolute top-[23px] right-[23px] w-[48px] h-[48px] rounded-[50%] bg-red-500 text-center">
                   <Heading
                     text={"-35%"}
@@ -292,7 +296,7 @@ function App() {
             </div>
             <div className="relative productItem group">
               <div>
-                <Image src={Lolito} alt={Lolito} />
+                <Image src={Lolito} alt={Lolito} className={"w-full"} />
                 <div className="absolute top-[23px] right-[23px] w-[48px] h-[48px] rounded-[50%] bg-red-500 text-center">
                   <Heading
                     text={"-35%"}
@@ -358,7 +362,7 @@ function App() {
             </div>
             <div className="relative productItem group">
               <div>
-                <Image src={Respira} alt={Respira} />
+                <Image src={Respira} alt={Respira} className={"w-full"} />
                 <div className="absolute top-[23px] right-[23px] w-[48px] h-[48px] rounded-[50%] bg-green-500 text-center">
                   <Heading
                     text={"New"}
@@ -426,7 +430,7 @@ function App() {
             </div>
             <div className="relative productItem group">
               <div>
-                <Image src={Respira} alt={Respira} />
+                <Image src={Respira} alt={Respira} className={"w-full"} />
                 <div className="absolute top-[23px] right-[23px] w-[48px] h-[48px] rounded-[50%] bg-green-500 ">
                   <Heading
                     text={"New"}
@@ -494,7 +498,7 @@ function App() {
             </div>
             <div className="relative productItem group">
               <div>
-                <Image src={Muggo} alt={Muggo} />
+                <Image src={Muggo} alt={Muggo} className={"w-full"} />
                 <div className="absolute top-[23px] right-[23px] w-[48px] h-[48px] rounded-[50%] bg-red-500 text-center">
                   <Heading
                     text={"-35%"}
@@ -560,7 +564,7 @@ function App() {
             </div>
             <div className="relative productItem group">
               <div>
-                <Image src={Respira} alt={Respira} />
+                <Image src={Respira} alt={Respira} className={"w-full"} />
                 <div className="absolute top-[23px] right-[23px] w-[48px] h-[48px] rounded-[50%] bg-green-500 ">
                   <Heading
                     text={"New"}
@@ -628,7 +632,7 @@ function App() {
             </div>
             <div className="relative productItem group">
               <div>
-                <Image src={Muggo} alt={Muggo} />
+                <Image src={Muggo} alt={Muggo} className={"w-full"} />
                 <div className="absolute top-[23px] right-[23px] w-[48px] h-[48px] rounded-[50%] bg-red-500 text-center">
                   <Heading
                     text={"-35%"}
@@ -698,25 +702,25 @@ function App() {
       {/* prodact part end  */}
 
       {/* Beautiful rooms part start  */}
-      <section className="bg-[#FCF8F3] py-[40px] my-[70px] ">
+      <section className="bg-[#FCF8F3] md:py-[40px] my-[70px] ">
         <Container className={"font-pop"}>
-          <Flex className={"gap-6"}>
-            <div className="mt-[180px] w-[40%]">
+          <Flex className={"flex flex-col md:flex-row gap-6"}>
+            <div className="md:mt-[180px] w-[40%]">
               <Heading
                 text={"50+ Beautiful rooms inspiration"}
                 as={"h4"}
-                className="text-[40px] font-bold text-[#3A3A3A] "
+                className="text-center md:text-[40px] font-bold text-[#3A3A3A] "
               />
               <Heading
                 text={
                   "Our designer already made a lot of beautiful prototipe of rooms that inspire you"
                 }
                 as={"p"}
-                className="text-[18px] font-medium text-[#616161] "
+                className="text-center md:text-[18px] font-medium text-[#616161] "
               />
               <Button
                 btnText={"Explore More"}
-                className="py-[12px] px-[36px] bg-[#B88E2F] text-[16px] font-bold text-white mt-[30px]"
+                className="md:py-[12px] md:px-[36px] bg-[#B88E2F] text-[16px] font-bold text-white mt-[30px]"
               />
             </div>
             <div>
@@ -734,7 +738,7 @@ function App() {
       {/* footer part start  */}
       <footer>
         <Container>
-          <Flex className={'mb-10'}>
+          <Flex className={"flex flex-col md:flex-row mb-10"}>
             <div className="w-[30%]">
               <Heading
                 text={"Funiro."}
@@ -750,7 +754,7 @@ function App() {
                 text={"FL 33134 USA"}
                 as={"h3"}
                 className="text-[16px] text-[#9F9F9F] "
-              /> 
+              />
             </div>
             <div className="w-[20%] ml-28">
               <Heading
@@ -780,7 +784,7 @@ function App() {
               />
             </div>
             <div className="w-[20%]">
-            <Heading
+              <Heading
                 text={"Help"}
                 as={"h3"}
                 className="text-[16px] text-[#9F9F9F] pb-[50px] font-medium "
@@ -802,22 +806,29 @@ function App() {
               />
             </div>
             <div className="w-[30%]">
-            <Heading
+              <Heading
                 text={"Newsletter"}
                 as={"h3"}
                 className="text-[14px] text-[#9F9F9F] pb-[50px] font-medium "
               />
-              <input type="text" placeholder="Enter Your Email Address" className="border-b-2 border-black" />
-              <Button btnText={'SUBSCRIBE'}  className="text-[14px] text-black ml-5 font-medium border-b-2 border-black"/>
+              <input
+                type="text"
+                placeholder="Enter Your Email Address"
+                className="border-b-2 border-black"
+              />
+              <Button
+                btnText={"SUBSCRIBE"}
+                className="text-[14px] text-black ml-5 font-medium border-b-2 border-black"
+              />
             </div>
           </Flex>
           <hr />
           <div>
-          <Heading
-                text={"2023 furino. All rights reverved"}
-                as={"h3"}
-                className="text-[16px] text-[#000000] pt-[20px] pb-[20px] font-medium "
-              />
+            <Heading
+              text={"2023 furino. All rights reverved"}
+              as={"h3"}
+              className="text-[16px] text-[#000000] pt-[20px] pb-[20px] font-medium "
+            />
           </div>
         </Container>
       </footer>
